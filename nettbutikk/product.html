@@ -9,44 +9,164 @@
 <body>
     <header id="global-header">
         <nav>
-            <a href="index.html" class="logo">LOGO</a>
-            <ul>
-                <li><a href="index.html">Hjem</a></li>
-                <li><a href="#produkter">Produkter</a></li>
-                <li><a href="#kategorier">Kategorier</a></li>
-                <li><a href="#kontakt-oss">Kontakt oss</a></li>
-            </ul>
-            <a href="checkout.html" class="shoppingvogn-ikon">
-                <!--Image by <a href="https://pixabay.com/users/itbrueckam-137793/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=349544">itbrueckam</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=349544">Pixabay</a>-->
-                <img src="img/shopping-cart-349544_640.png" alt="Shoppingvogn ikon">
-            </a>
             <form>
                 <input type="search" placeholder="søk her" id="search">
                 <input type="submit" value="søk">
             </form>
+            <a href="index.html" class="link-logo">LOGO</a>
+            <ul>
+                <li><a href="index.html">Hjem</a></li>
+                <li><a href="#produkter">Produkter</a></li>
+                <li><a href="#kategorier">Kategorier</a></li>
+                <li><a href="#kontakt">Kontakt oss</a></li>
+            </ul>
+            <a href="checkout.html" class="shoppingvogn-ikon">
+                <!--Image by <a href="https://pixabay.com/users/itbrueckam-137793/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=349544">itbrueckam</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=349544">Pixabay</a>-->
+                <img src="../img/shopping-cart.png" alt="Shoppingvogn ikon">
+            </a>
         </nav>
     </header>
+    
+    <nav class="brødsmulesti">
+        <ul>
+            <li><a href="index.html">Hjem</a></li>
+            <li><a href="kategori.html">Kategori</a></li>
+            <li>Produktnavn</li>
+        </ul>
+    </nav>
 
     <main>
-        <section id="produkter">
-            <h2>Våre mest populære produkter</h2>
-            <article>
-                
+        <section id="produktside">
+            <article class="produktside-kort">
+                <!--Image by <a href="https://pixabay.com/users/engin_akyurt-3656355/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=2604730">Engin Akyurt</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=2604730">Pixabay</a>-->
+                <img src="../img/pants.jpg" alt="Grå jeans">
+            </article>
+            <article class="produktside-kort">
+                <!--Image by <a href="https://pixabay.com/users/engin_akyurt-3656355/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=2604730">Engin Akyurt</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=2604730">Pixabay</a>-->
+                <img src="../img/pants.jpg" alt="Grå jeans">
+            </article>
+            <article class="produktside-kort">
+                <!--Image by <a href="https://pixabay.com/users/engin_akyurt-3656355/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=2604730">Engin Akyurt</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=2604730">Pixabay</a>-->
+                <img src="../img/pants.jpg" alt="Grå jeans">
+            </article>
+            <article class="produktside-kort">
+                <!--Image by <a href="https://pixabay.com/users/engin_akyurt-3656355/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=2604730">Engin Akyurt</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=2604730">Pixabay</a>-->
+                <img src="../img/pants.jpg" alt="Grå jeans">
             </article>
         </section>
-    </main>
-    <aside>
-        <section>
-            <h4></h4>
-            <nav>
-
-            </nav>
+        <section id="produktnavn">
+            <h2>Produktnavn</h2>
+            <p class="merke">
+                <a href="#">MERKENAVN</a>
+            </p>
+            <p class="pris">5195 kr inkl. mva.</p>
+            <p class="farge">Farge: <span class="beige">beige</span></p>
         </section>
+    </main>
+    <aside class="lignende-produkter">
+        <h2>Lignende Produkter</h2>
+        <article class="lignende-produktkort">
+            <!--Image by <a href="https://pixabay.com/users/nitanever-239109/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1266433">Anastasiya Kolpakova</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1266433">Pixabay</a>-->
+            <img src="../img/socks.jpg" alt="Stripete grønn og blå sokker">
+            <h3>Product name</h3>
+            <p>Kr 1999</p>
+        </article>
+        <article class="lignende-produktkort">
+            <!--Image by <a href="https://pixabay.com/users/nitanever-239109/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1266433">Anastasiya Kolpakova</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1266433">Pixabay</a>-->
+            <img src="../img/socks.jpg" alt="Stripete grønn og blå sokker">
+            <h3>Product name</h3>
+            <p>Kr 1999</p>
+        </article>
+        <article class="lignende-produktkort">
+            <!--Image by <a href="https://pixabay.com/users/nitanever-239109/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1266433">Anastasiya Kolpakova</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1266433">Pixabay</a>-->
+            <img src="../img/socks.jpg" alt="Stripete grønn og blå sokker">
+            <h3>Product name</h3>
+            <p>Kr 1999</p>
+        </article>
+        <article class="lignende-produktkort">
+            <!--Image by <a href="https://pixabay.com/users/nitanever-239109/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1266433">Anastasiya Kolpakova</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1266433">Pixabay</a>-->
+            <img src="../img/socks.jpg" alt="Stripete grønn og blå sokker">
+            <h3>Product name</h3>
+            <p>Kr 1999</p>
+        </article>
+        <article class="lignende-produktkort">
+            <!--Image by <a href="https://pixabay.com/users/nitanever-239109/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1266433">Anastasiya Kolpakova</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1266433">Pixabay</a>-->
+            <img src="../img/socks.jpg" alt="Stripete grønn og blå sokker">
+            <h3>Product name</h3>
+            <p>Kr 1999</p>
+        </article>
+        <article class="lignende-produktkort">
+            <!--Image by <a href="https://pixabay.com/users/nitanever-239109/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1266433">Anastasiya Kolpakova</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1266433">Pixabay</a>-->
+            <img src="../img/socks.jpg" alt="Stripete grønn og blå sokker">
+            <h3>Product name</h3>
+            <p>Kr 1999</p>
+        </article>
     </aside>
+
     <footer id="footer">
-        <section id="Kontakt-oss">
-            <h2>Kontakt oss</h2>
-            <p>Hiof.no etc etc</p>
+        <section id="footer-logo">
+            <h2>Logo</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, vitae.</p>
+        </section>
+        <section id="kontakt">
+            <h2>KONTAKT</h2>
+            <p>
+                <!--Image by <a href="https://pixabay.com/users/openclipart-vectors-30363/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=157354">OpenClipart-Vectors</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=157354">Pixabay</a>-->
+                <img src="../img/adress-logo.png" alt="Adresse logo">
+                Adresse: B R A Veien 4, 1757 Halden
+            </p>
+            <p>
+                <!--Image by <a href="https://pixabay.com/users/clker-free-vector-images-3736/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=39851">Clker-Free-Vector-Images</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=39851">Pixabay</a>-->
+                <img src="../img/telephone-logo.png" alt="Telefon logo">
+                Telefon: 69 60 80 00
+            </p>
+            <p>
+                <!--Image by <a href="https://pixabay.com/users/samuel1983-1626596/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1119307">Samuel1983</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1119307">Pixabay</a>-->
+                <img src="../img/email-logo.png" alt="E-post logo">
+                E-post: halden@hiof.no
+            </p>
+            <p>
+                <!--Image by <a href="https://pixabay.com/users/openclipart-vectors-30363/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1292829">OpenClipart-Vectors</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1292829">Pixabay</a>-->
+                <img src="../img/opening-hours-logo.png" alt="Åpningstider logo">
+                Åpningstider: 
+            </p>
+        </section>
+        <section id="snarveier">
+            <h2>SNARVEIER</h2>
+            <ul>
+                <li><a href="#produkter">Produkter</a></li>
+                <li><a href="#kategorier">Kategorier</a></li>
+                <li><a href="#kontakt">Kontakt oss</a></li>
+            </ul>
+        </section>
+        <section id="sosiale-medier">
+            <h2>SOSIALE MEDIER</h2>
+            <ul>
+                <li>
+                    <a href="https://www.instagram.com" target="_blank">
+                        <!--Image by <a href="https://pixabay.com/users/raphaelsilva-4702998/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=3814048">Raphael Silva</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=3814048">Pixabay</a>-->
+                        <img src="../img/instagram-logo.png" alt="Instagram Logo">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.facebook.com" target="_blank">
+                        <!--Image by <a href="https://pixabay.com/users/raphaelsilva-4702998/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=2935402">Raphael Silva</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=2935402">Pixabay</a>-->
+                        <img src="../img/facebook-logo.png" alt="Facebook Logo">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/" target="_blank">
+                    <!--Image by <a href="https://pixabay.com/users/raphaelsilva-4702998/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=2935407">Raphael Silva</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=2935407">Pixabay</a>-->
+                    <img src="../img/linkedin-logo.png" alt="Linkedin Logo">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.pinterest.com" target="_blank">
+                        <!--Image by <a href="https://pixabay.com/users/raphaelsilva-4702998/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=2935409">Raphael Silva</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=2935409">Pixabay</a>-->
+                        <img src="../img/pinterest-logo.png" alt="Pinterest Logo">
+                    </a>
+                </li>
+            </ul>
         </section>
     </footer>
 </body>
