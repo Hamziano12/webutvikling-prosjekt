@@ -3,7 +3,7 @@
 <head>
     <meta charset = "utf-8">
     <meta name = "viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../../css/style.css">
     <title>Nettbutikk</title>
 </head>
 <body>
@@ -11,12 +11,14 @@
         <nav>
             <form>
                 <input type="search" placeholder="søk her" id="search">
-                <input type="submit" value="søk">
+                <button type="submit" id="søk">
+                    <img src="../img/search.png" alt="Søke logo" id="search-icon">
+                </button>
             </form>
-            <a href="index.html" class="link-logo">LOGO</a>
             <ul>
                 <li><a href="index.html">Hjem</a></li>
                 <li><a href="#produkter">Produkter</a></li>
+                <li><a href="index.html" id="link-logo">Logo</a></li>
                 <li><a href="#kategorier">Kategorier</a></li>
                 <li><a href="#kontakt">Kontakt oss</a></li>
             </ul>
@@ -123,7 +125,7 @@
             </form>
         </section>
     </main>
-    <footer id="footer">
+   <footer id="footer">
         <section id="footer-logo">
             <h2>Logo</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, vitae.</p>
