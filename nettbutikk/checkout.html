@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="../../css/style.css">
     <title>Nettbutikk</title>
 </head>
-<body>
+<body id="alt">
     <header id="global-header">
         <nav>
             <form>
@@ -17,9 +17,9 @@
             </form>
             <ul>
                 <li><a href="index.html">Hjem</a></li>
-                <li><a href="#produkter">Produkter</a></li>
+                <li><a href="index.html#produkter">Produkter</a></li>
                 <li><a href="index.html" id="link-logo">Logo</a></li>
-                <li><a href="#kategorier">Kategorier</a></li>
+                <li><a href="index.html#kategorier">Kategorier</a></li>
                 <li><a href="#kontakt">Kontakt oss</a></li>
             </ul>
             <a href="#" class="minside-ikon">
@@ -43,24 +43,24 @@
             <h1>1. SHOPPINGBAGEN DIN</h1>
             <article class="produktside-kort">
                 <!--Image by <a href="https://pixabay.com/users/engin_akyurt-3656355/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=2604730">Engin Akyurt</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=2604730">Pixabay</a>-->
-                <img src="../img/pants.jpg" alt="Grå jeans">
+                <img src="../img/dress.png" alt="Blå dress">
                 <h3>PRODUCT NAME</h3>
                 <p>Kr 1999</p>
-                <p>Farge: beige</p>
+                <p>Farge: blå</p>
             </article>
             <article class="produktside-kort">
                 <!--Image by <a href="https://pixabay.com/users/engin_akyurt-3656355/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=2604730">Engin Akyurt</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=2604730">Pixabay</a>-->
-                <img src="../img/pants.jpg" alt="Grå jeans">
+                <img src="../img/dress.png" alt="Blå dress">
                 <h3>PRODUCT NAME</h3>
                 <p>Kr 1999</p>
-                <p>Farge: beige</p>
+                <p>Farge: blå</p>
             </article>
             <article class="produktside-kort">
                 <!--Image by <a href="https://pixabay.com/users/engin_akyurt-3656355/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=2604730">Engin Akyurt</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=2604730">Pixabay</a>-->
-                <img src="../img/pants.jpg" alt="Grå jeans">
+                <img src="../img/dress.png" alt="Blå dress">
                 <h3>PRODUCT NAME</h3>
                 <p>Kr 1999</p>
-                <p>Farge: beige</p>
+                <p>Farge: blå</p>
             </article>
         </section>
         <section id="opplysninger">
@@ -68,13 +68,13 @@
             <form>
                 <fieldset>
                     <legend>Leveringsadresse</legend>
-                    <input type="text" placeholder="Fornavn" id="fornavn" pattern="[A-Za-zæøåÆØÅ]{2,}" name="fornavn" required>
-                    <input type="text" placeholder="Etternavn" id="etternavn" pattern="[A-Za-zæøåÆØÅ]{2,}" name="etternavn" required>
-                    <input type="text" placeholder="Gateadresse" id="gateadresse" pattern="[A-Za-zæøåÆØÅ0-9]{2,}" name="gateadresse" required>
-                    <input type="text" placeholder="Postnummer" id="postnummer" pattern="\d{4}" name="postnummer" required>
-                    <input type="text" placeholder="Poststed" id="poststed" pattern="[A-Za-zæøåÆØÅ ]{2,}" name="poststed" required>
-                    <button type="submit">Lagre</button>
-                    <button type="reset">Avbryt</button>
+                    <input type="text" placeholder="Fornavn*" id="fornavn" pattern="[A-Za-zæøåÆØÅ]{2,}" name="fornavn" required>
+                    <input type="text" placeholder="Etternavn*" id="etternavn" pattern="[A-Za-zæøåÆØÅ]{2,}" name="etternavn" required>
+                    <input type="text" placeholder="Gateadresse*" id="gateadresse" pattern="[A-Za-zæøåÆØÅ0-9]{2,}" name="gateadresse" required>
+                    <input type="text" placeholder="Postnummer*" id="postnummer" pattern="\d{4}" name="postnummer" required>
+                    <input type="text" placeholder="Poststed*" id="poststed" pattern="[A-Za-zæøåÆØÅ ]{2,}" name="poststed" required>
+                    <button id="lagre" type="submit">Lagre</button>
+                    <button id="avbryt" type="reset">Avbryt</button>
                 </fieldset>
             </form> 
         </section>
@@ -111,29 +111,28 @@
                     </label><br>
                     <label for="utløpsdato">
                         Utløpsdato
-                        <input type="date" id="utløsdato" name="utløpsdato" required>
+                        <input type="date" id="utløpsdato" name="utløpsdato" required>
                     </label><br>
                     <label for="cvc">
                         CVC/CVV
                         <input type="text" id="cvc" name="cvc" placeholder="CVC/CVV" required pattern="[0-9]{3,4}">
                     </label><br>
-                    <p>Å betale inkl. mva.</p>
+                    <p id="betal-inkl">Å betale inkl. mva.</p>
                     <p>1 199 kr</p>
-                    <button type="submit">Fullfør kjøp</button>
-                    <p>Du bekrefter herved at opplysningene og dokumentene du har oppgitt er korrekte og fullstendige. Leverandøren forbeholder seg retten til å heve eller avslutte avtaleforholdet dersom det foreligger uriktige eller ufullstendige opplysninger.</p>
-                    <label><br>
-                        Ja takk! Send nyhetsbrev til meg.
-                        <input type="checkbox" name="nyhetsbrev">
+                    <button id="buy" type="submit">Fullfør kjøp</button>
+                    <p id="bekreft">Du bekrefter herved at opplysningene og dokumentene du har oppgitt er korrekte og fullstendige. Leverandøren forbeholder seg retten til å heve eller avslutte avtaleforholdet dersom det foreligger uriktige eller ufullstendige opplysninger.</p>
+                    <label id="checkbox"><br>
+                        <input type="checkbox" name="nyhetsbrev">Ja takk! Send nyhetsbrev til meg.
                     </label>
-                    <label><br>
-                        Jeg ønsker å motta tekstmeldinger med tilbud og nyheter.
-                        <input type="checkbox" name="tekstmelding-tilbud">
+                    <label id="checkbox"><br>
+                        <input type="checkbox" name="tekstmelding-tilbud">Jeg ønsker å motta tekstmeldinger med tilbud og nyheter.
                     </label>
                 </fieldset>
             </form>
         </section>
     </main>
-   <footer id="footer">
+    <hr>
+    <footer id="footer">
         <section id="footer-logo">
             <h2>Logo</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, vitae.</p>
@@ -158,14 +157,14 @@
             <p>
                 <!--Image by <a href="https://pixabay.com/users/openclipart-vectors-30363/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1292829">OpenClipart-Vectors</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1292829">Pixabay</a>-->
                 <img src="../img/opening-hours-logo.png" alt="Åpningstider logo">
-                Åpningstider: 
+                Åpningstider: Stenger 15:00
             </p>
         </section>
         <section id="snarveier">
             <h2>SNARVEIER</h2>
             <ul>
-                <li><a href="#produkter">Produkter</a></li>
-                <li><a href="#kategorier">Kategorier</a></li>
+                <li><a href="index.html#produkter">Produkter</a></li>
+                <li><a href="index.html#kategorier">Kategorier</a></li>
                 <li><a href="#kontakt">Kontakt oss</a></li>
             </ul>
         </section>
