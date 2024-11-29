@@ -1,10 +1,10 @@
 body{
     font-family: Arial, Helvetica, sans-serif;
-    overflow-x: hidden;
 }
 
 *{
     box-sizing: border-box;
+    overflow-x: hidden;
 }
 
 #search{
@@ -165,7 +165,7 @@ hr{
 }
 
 .filtrering-knapp {
-    padding: 15px 35px;
+    padding: 15px 30px;
     border: 0.1px solid black;
     background-color: none;
     display: inline-block;
@@ -287,18 +287,23 @@ hr{
 
 .lignende-produktkort{
     text-align: center;
-    position: relative;
     display: block;
+    overflow: hidden;
 }
 
 .lignende-produkter h3{
     padding: 0;
-    margin-right: 80px;
+    margin-right: 250px;
+}
+
+.lignende-produkter a{
+    display: inline-block;
 }
 
 .lignende-produkter p{
     padding: 0;
-    margin-left: 80px;
+    margin-left: 300px;
+    margin-top: -50px;
 }
 
 #produkter{
