@@ -259,7 +259,7 @@ hr{
     margin-bottom: 10px;
 }
 
-#liten{
+#liten, #liten2, #liten3{
     width: 80%;
     height: auto;
     margin: 0 auto;
@@ -461,7 +461,7 @@ form fieldset legend{
     font-weight: bold;
 }
 
-#checkbox{
+#checkbox, #checkbox2{
     font-size: 14px;
     font-weight: bold;
 }
